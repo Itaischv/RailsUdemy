@@ -1,85 +1,98 @@
 $navbar-default-bg: #330066;
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
-*{
-  margin:0;
-  padding:0;
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-btn{
-  color:white;
+
+btn {
+  color: white;
 }
-.navbar-brand{
+
+.navbar-brand {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #fafafa;
 }
+
 .navbar-default .navbar-brand {
   color: #dcdcdc;
 }
 
-nav navbar-nav{
-  color:#f9f8f9;
+nav navbar-nav {
+  color: #f9f8f9;
 }
-.center{
+
+.center {
   text-align: center;
 }
 
-.jumbotron{
-  height:550px;
+.jumbotron {
+  height: 550px;
 }
 
-.jumbotron h1{
-  color:#222;
+.jumbotron h1 {
+  color: #222;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: -1px;
   font-weight: bold;
 }
 
-.article-actions{
-  border-top:1px solid #eaeaea;
-  padding-top:2%;
+.article-actions {
+  border-top: 1px solid #eaeaea;
+  padding-top: 2%;
 }
 
-.article-title{
+.article-title {
   font-weight: bold;
   font-size: 1.5em;
-
 }
 
-.article-body{
+.article-body {
   border-top: 1px solid #eaeaea;
   padding-top: 1%;
 }
 
-.description{
+#articles_page_h1 {
+  text-align: center;
+  padding: 1% 0 2%;
+}
+
+.article-meta-details {
+  border-top: 1px solid #eaeaea;
+  margin-top: 15px;
+}
+
+.description {
   margin-top: 0;
 }
 
-footer{
+footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color:#777
+  color: #777;
 }
 
-footer a:hover{
-  color:#222;
+footer a:hover {
+  color: #222;
 }
 
-footer small{
+footer small {
   float: left;
 }
 
-footer ul{
+footer ul {
   float: right;
   list-style: none;
 }
 
-footer ul li{
-  float: left;;
+footer ul li {
+  float: left;
   margin-left: 15px;
 }
