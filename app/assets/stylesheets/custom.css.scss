@@ -2,6 +2,14 @@ $navbar-default-bg: #330066;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+btn{
+  color:white;
+}
 .navbar-brand{
   font-weight: 600;
   letter-spacing: 1px;
@@ -12,6 +20,9 @@ $navbar-default-bg: #330066;
   color: #dcdcdc;
 }
 
+nav navbar-nav{
+  color:#f9f8f9;
+}
 .center{
   text-align: center;
 }
