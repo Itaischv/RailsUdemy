@@ -58,6 +58,19 @@ nav navbar-nav {
   padding-top: 1%;
 }
 
+.listing{
+  list-style: none;
+  padding-left: 0;
+  li{
+    color: red;
+    margin: 5px 0;
+  }
+}
+
+
+
+
+
 #articles_page_h1 {
   text-align: center;
   padding: 1% 0 2%;
