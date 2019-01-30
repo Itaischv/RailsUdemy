@@ -6,6 +6,13 @@
   </div>
 </div>
 <h4 align="center"><%= @user.username %> articles :</h4>
-<%= render 'articles/article', obj: @user.articles %>
+<div align="center">
+<%= will_paginate @user_articles %>
+</div>
+<%= render 'articles/article', obj: @user_articles %>
+<div align="center">
+<%= will_paginate @user_articles %>
+</div>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

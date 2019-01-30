@@ -4,13 +4,14 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.paginate(page: params[:page], per_page: 2)
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
+    @user_articles = @user.articles.paginate(page: params[:page], per_page: 1)
   end
 
   # GET /users/new
@@ -26,7 +27,6 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    debugger
     @user = User.new(user_params)
       if @user.save
         flash[:success] = "Welcome to AlphaBlog #{@user.username}"
